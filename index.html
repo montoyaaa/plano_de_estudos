@@ -5,11 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      table,
+      td,
+      th {
+        border: solid 1px;
+        border-collapse: collapse;
+        text-align: center;
+      }
+
+      th {
+        min-width: 100px;
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      .marked {
+        background-color: aqua;
+      }
+    </style>
   </head>
   <body>
-    <header>
+    <header style="text-align: center">
       <h1>Plano de Estudos</h1>
-      <img src="./images/image-bonita.png" width="250" />
+      <img src="./images/image-bonita.png" width="150" />
     </header>
+    <main style="display: flex; justify-content: center">
+      <table>
+        <thead>
+          <tr>
+            <th>Hora</th>
+            <th>Segunda</th>
+            <th>Terça</th>
+            <th>Quarta</th>
+            <th>Quinta</th>
+            <th>Sexta</th>
+            <th class="marked">Sábado</th>
+            <th class="marked">Domingo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>08:00 - 12:00</td>
+            <td>Estuda react</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>12:00 - 13:00</td>
+            <td colspan="7">Almoço</td>
+          </tr>
+          <tr>
+            <td>13:00 - 15:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="3">Descansar</td>
+          </tr>
+          <tr>
+            <td>15:00 - 18:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>18:00 - 22:30</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>22:30 - 08:00</td>
+            <td colspan="7">Dormir</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="8">
+              <img src="./images/growdev.png" width="100" />
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+    <footer>
+      <small
+        >Atividade prática - Tabela de Cronograma de Estudos - &copy;Growdev
+        2022</small
+      >
+    </footer>
   </body>
 </html>
